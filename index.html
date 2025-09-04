@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cora-Cali - Escultura afetiva menina e cachorro</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://dcdn-us.mitiendanube.com/stores/006/437/317/themes/common/logo-1884112571-1751492816-84d070ed8a2bf927d59336504ec337da1751492816.ico?0" class="js-favicon" rel="icon" type="image/x-icon" />
+    <link href="https://dcdn-us.mitiendanube.com/stores/006/437/317/themes/common/logo-1884112571-1751492816-84d070ed8a2bf927d59336504ec337da1751492816.ico?0" class="js-favicon" rel="shortcut icon" type="image/x-icon" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f5f1;
+        }
+        .hero-bg {
+            background-color: #f8f5f1;
+        }
+        .btn-accent {
+            background-color: #bc7f4d;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(181, 168, 148, 0.6);
+        }
+        .btn-accent:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-section {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+    </style>
+
+</head>
+<body class="text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center justify-center p-8 md:p-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-16">
+            
+            <!-- Product Image -->
+            <div class="md:w-1/2 flex justify-center items-center fade-in-section">
+                <img src="https://dcdn-us.mitiendanube.com/stores/006/437/317/products/5165794176535736934-9da83e9dc6d89717ad17525739619416-1024-1024.webp"
+                     alt="Handmade Product"
+                     class="w-full max-w-lg rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <!-- Product Info & CTA -->
+            <div class="md:w-1/2 text-center md:text-left space-y-6 fade-in-section" style="animation-delay: 0.3s;">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Escultura de madeira atemporal para amantes de cachorros.
+                </h1>
+                <p class="text-lg md:text-xl font-light text-gray-600 max-w-xl mx-auto md:mx-0">
+                    A decoração celebra a conexão mais pura entre humanos e animais a partir de uma delicada peça artesanal. É o um símbolo de afeto, lealdade e companheirismo.
+                </p>
+                <button id="buyNowBtn" class="btn-accent px-10 py-4 font-semibold text-lg text-white rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    Comprar agora por R$ 99.90
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <main>
+        <section class="py-24 px-8 md:px-16 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
+                    Principais Características
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                   
+                    <!-- Feature Card 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform hover:scale-105 duration-300">
+                        <svg class="h-16 w-16 text-stone-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke="#bc7f4d" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Material Resistente</h3>
+                        <p class="text-gray-600">Feito de madeira MDF de alta qualidade para uma beleza duradoura.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform hover:scale-105 duration-300">
+						<svg class="h-16 w-16 text-stone-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path d="M22 12H2" stroke="#bc7f4d" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M12 2V22" stroke="#bc7f4d" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M13 12C13 14.2091 14.7909 16 17 16" stroke="#bc7f4d" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M11 12C11 14.2091 9.20914 16 7 16" stroke="#bc7f4d" stroke-width="1.5" stroke-linecap="round"/>
+							<path d="M12 10.0352C12 8.54529 13.014 7.24659 14.4594 6.88524C16.0631 6.48431 17.5158 7.93697 17.1148 9.5407C16.7535 10.9861 15.4548 12.0001 13.9649 12.0001H12V10.0352Z" stroke="#bc7f4d" stroke-width="1.5"/>
+							<path d="M12.0001 10.0352C12.0001 8.54529 10.9861 7.24659 9.5407 6.88524C7.93698 6.48431 6.48431 7.93697 6.88524 9.5407C7.24659 10.9861 8.54529 12.0001 10.0352 12.0001H12.0001V10.0352Z" stroke="#bc7f4d" stroke-width="1.5"/>
+							<path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" stroke="#bc7f4d" stroke-width="1.5"/>
+						</svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Perfeito para Presentear</h3>
+                        <p class="text-gray-600">Um presente ideal que simboliza carinho e companheirismo.</p>
+                    </div>
+
+                    <!-- Feature Card 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform hover:scale-105 duration-300">
+						<svg class="h-16 w-16 text-stone-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path d="M7 9V15M21 14V7.2C21 6.0799 21 5.51984 20.782 5.09202C20.5903 4.71569 20.2843 4.40973 19.908 4.21799C19.4802 4 18.9201 4 17.8 4H6.2C5.0799 4 4.51984 4 4.09202 4.21799C3.71569 4.40973 3.40973 4.71569 3.21799 5.09202C3 5.51984 3 6.0799 3 7.2V16.8C3 17.9201 3 18.4802 3.21799 18.908C3.40973 19.2843 3.71569 19.5903 4.09202 19.782C4.51984 20 5.0799 20 6.2 20H12M12 13H12.7976C13.2426 13 13.465 13 13.6765 13.0463C13.8641 13.0874 14.0447 13.1553 14.213 13.2479C14.4026 13.3523 14.57 13.4988 14.9049 13.7918L20.8649 19.0068C21.4792 19.5443 21.5107 20.4893 20.9335 21.0665C20.4082 21.5918 19.5656 21.6199 19.0065 21.1307L13.0928 15.9562C12.6907 15.6043 12.4896 15.4284 12.3452 15.2158C12.2173 15.0273 12.1225 14.8184 12.065 14.5981C12 14.3495 12 14.0823 12 13.5479V13Z" stroke="#bc7f4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Design Único.</h3>
+                        <p class="text-gray-600">Designs únicos que você só encontra na Cora-Cali.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center py-6">
+        <div class="container mx-auto">
+            <p class="text-sm text-gray-600">&copy; 2025 Cora-Cali. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function() {
+            console.log("Buy Now button clicked!");
+        });
+    </script>
+</body>
+</html>
